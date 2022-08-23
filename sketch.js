@@ -166,7 +166,8 @@ function draw()
     star.visible = false;
   }
   if (collide(fruit,star2,20)==true) {
-    star2.visible = false;
+    star2.visible = false; 
+  }
 }
 
 function drop()
@@ -212,7 +213,8 @@ function mute()
      }
 }
 
-function airblow(){
+function airblow()
+{
   Matter.Body.applyForce(fruit,{x:0,y:0},{x:0,y:-0.03});
   air.play();
 } 
